@@ -14,7 +14,6 @@ pub mod thread;
 pub mod mutex;
 pub mod sem;
 pub mod queue;
-#[cfg(feature = "libdl")]
 pub mod libloading;
 
 
@@ -25,5 +24,4 @@ pub use thread::*;
 pub use mutex::*;
 pub use sem::*;
 pub use queue::*;
-#[cfg(feature = "libdl")]
 pub use libloading::*;
